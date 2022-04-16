@@ -722,8 +722,7 @@ namespace Kursovaya_AirBookingSystem
 
     public static class Constants
     {
-        //Enter Your Parameters Here
         public const string DataBaseConnection = "SERVER=;DATABASE=;UID=;PASSWORD=;";
-        public const string TicketReportPath = @"D:\source\repos\Kursovaya_AirBookingSystem\Ticket.rdlc";
+        public const string TicketReportPath = @"..\Kursovaya_AirBookingSystem\Ticket.rdlc";
     }
 }
