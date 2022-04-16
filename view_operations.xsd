@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="view_operations" targetNamespace="http://tempuri.org/view_operations.xsd" xmlns:mstns="http://tempuri.org/view_operations.xsd" xmlns="http://tempuri.org/view_operations.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="air_bookingConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="air_bookingConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Kursovaya_AirBookingSystem.Properties.Settings.GlobalReference.Default.air_bookingConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_operationsTableAdapter" GeneratorDataComponentClassName="view_operationsTableAdapter" Name="view_operations" UserDataComponentName="view_operationsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="air_bookingConnectionString (Settings)" DbObjectName="air_booking.view_operations" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT `IDoperation`, `ID_cl`, `oDateTime`, `ID_f`, `seatTakerFirstName`, `seatTakerLastName`, `seatNum`,`destinationP` FROM `air_booking`.`view_operations`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IDoperation" DataSetColumn="IDoperation" />
+              <Mapping SourceColumn="ID_cl" DataSetColumn="ID_cl" />
+              <Mapping SourceColumn="oDateTime" DataSetColumn="oDateTime" />
+              <Mapping SourceColumn="ID_f" DataSetColumn="ID_f" />
+              <Mapping SourceColumn="seatTakerFirstName" DataSetColumn="seatTakerFirstName" />
+              <Mapping SourceColumn="seatTakerLastName" DataSetColumn="seatTakerLastName" />
+              <Mapping SourceColumn="seatNum" DataSetColumn="seatNum" />
+              <Mapping SourceColumn="destinationP" DataSetColumn="destinationP" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="view_operations" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="view_operations" msprop:Generator_UserDSName="view_operations">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_operations" msprop:Generator_TableClassName="view_operationsDataTable" msprop:Generator_TableVarName="tableview_operations" msprop:Generator_RowChangedName="view_operationsRowChanged" msprop:Generator_TablePropName="_view_operations" msprop:Generator_RowDeletingName="view_operationsRowDeleting" msprop:Generator_RowChangingName="view_operationsRowChanging" msprop:Generator_RowEvHandlerName="view_operationsRowChangeEventHandler" msprop:Generator_RowDeletedName="view_operationsRowDeleted" msprop:Generator_RowClassName="view_operationsRow" msprop:Generator_UserTableName="view_operations" msprop:Generator_RowEvArgName="view_operationsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDoperation" msprop:Generator_ColumnVarNameInTable="columnIDoperation" msprop:Generator_ColumnPropNameInRow="IDoperation" msprop:Generator_ColumnPropNameInTable="IDoperationColumn" msprop:Generator_UserColumnName="IDoperation" type="xs:unsignedInt" />
+              <xs:element name="ID_cl" msprop:Generator_ColumnVarNameInTable="columnID_cl" msprop:Generator_ColumnPropNameInRow="ID_cl" msprop:Generator_ColumnPropNameInTable="ID_clColumn" msprop:Generator_UserColumnName="ID_cl" type="xs:unsignedInt" />
+              <xs:element name="oDateTime" msprop:Generator_ColumnVarNameInTable="columnoDateTime" msprop:Generator_ColumnPropNameInRow="oDateTime" msprop:Generator_ColumnPropNameInTable="oDateTimeColumn" msprop:Generator_UserColumnName="oDateTime" type="xs:dateTime" />
+              <xs:element name="ID_f" msprop:Generator_ColumnVarNameInTable="columnID_f" msprop:Generator_ColumnPropNameInRow="ID_f" msprop:Generator_ColumnPropNameInTable="ID_fColumn" msprop:Generator_UserColumnName="ID_f" type="xs:unsignedInt" />
+              <xs:element name="seatTakerFirstName" msprop:Generator_ColumnVarNameInTable="columnseatTakerFirstName" msprop:Generator_ColumnPropNameInRow="seatTakerFirstName" msprop:Generator_ColumnPropNameInTable="seatTakerFirstNameColumn" msprop:Generator_UserColumnName="seatTakerFirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="seatTakerLastName" msprop:Generator_ColumnVarNameInTable="columnseatTakerLastName" msprop:Generator_ColumnPropNameInRow="seatTakerLastName" msprop:Generator_ColumnPropNameInTable="seatTakerLastNameColumn" msprop:Generator_UserColumnName="seatTakerLastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="seatNum" msprop:Generator_ColumnVarNameInTable="columnseatNum" msprop:Generator_ColumnPropNameInRow="seatNum" msprop:Generator_ColumnPropNameInTable="seatNumColumn" msprop:Generator_UserColumnName="seatNum" type="xs:unsignedInt" />
+              <xs:element name="destinationP" msprop:Generator_ColumnVarNameInTable="columndestinationP" msprop:Generator_ColumnPropNameInRow="destinationP" msprop:Generator_ColumnPropNameInTable="destinationPColumn" msprop:Generator_UserColumnName="destinationP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_operations" />
+      <xs:field xpath="mstns:IDoperation" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
