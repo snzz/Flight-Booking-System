@@ -1,5 +1,4 @@
 # Flight-Booking-System
-(!) English version of Readme in files
 
 Система для поиска и покупки авиабилетов.
 + Система постороения приложения - WinForms
